@@ -28,6 +28,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+   
 }
 
 .section-title {
@@ -164,4 +165,52 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+}
+header{
+    position: relative;
+}
+#logo {
+    width: 61.09px;
+    height: 19px;
+    padding-top:30px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 10px;
+    margin-left: -50px;
+    margin-top: -10px;
+
+}
+   
+nav {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin-right: 15px; /* Ajuste selon le besoin */
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+   margin-left:80px 
+   
+}
+.lien-header {
+    position: relative;
+    display: inline-block;
+}
+.lien-header:hover {
+    color: #0065FC;
+    
+}
+     
+.lien-header:hover::before {
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 40px;
+    width: 100%; /* Prend toute la largeur du texte */
+    height: 2px;
+    background-color: #0065FC;  
+    
 }
