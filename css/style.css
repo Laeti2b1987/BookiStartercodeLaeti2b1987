@@ -167,50 +167,47 @@ a {
     /* ... */
 }
 header{
-    position: relative;
+    margin-right:0px;
+    margin-left:0px;
+    padding: 20px 0;
+    position:relative;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
 }
 #logo {
-    width: 61.09px;
-    height: 19px;
-    padding-top:30px;
-    padding-bottom: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-    gap: 10px;
-    margin-left: -50px;
-    margin-top: -10px;
+    width: 150px;
+    height: 50px;
+    padding-left: -100px;
+}   
 
-}
-   
+  
 nav {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    margin-right: 15px; /* Ajuste selon le besoin */
-    display: flex;
-    align-items: center;
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin:0;
 }
 
-nav a {
-   margin-left:80px 
-   
-}
-.lien-header {
-    position: relative;
-    display: inline-block;
-}
-.lien-header:hover {
+.element {
+    padding:0 50px;
+}   
+
+.element:hover {
     color: #0065FC;
-    
+ 
+
 }
-     
-.lien-header:hover::before {
-    content: "";
-    position:absolute;
-    left: 0;
-    bottom: 40px;
-    width: 100%; /* Prend toute la largeur du texte */
+
+.element:hover:before {
+    content: '';
+    position: absolute;
+    width: 100%;
     height: 2px;
-    background-color: #0065FC;  
-    
+    bottom:100px;
+    left: 0;        
+    background-color: #0065FC;
 }
