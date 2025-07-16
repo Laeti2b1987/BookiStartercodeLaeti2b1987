@@ -16,35 +16,72 @@
 
 <body>
     <div class="main-container">
-        <header>
+        
+    <header>
             <a href="index.html">
                 <img src="./images/logo/Booki.png" alt="Logo Booki" id="logo">
-            </a>
-            
+            </a>   
         
-            <nav class="lien">
-        
-                <div class="lien-element">
-                    <div class="line-overline"></div>
-            <a href="#Hebergements*" class="element"> Hébergements </a>
+        <nav >
 
-            </div>
-                <div class="lien-element">
-                    <div class="line-overline"></div>
-            <a href="#Activites*" class="element"> Activités </a>
-             </div>   
+            <ul class="lien">
+                <li>
+                    <a href="#Hebergements*" class="lien-element"> Hébergements </a>
+                </li>  
+                <li>
+                    <a href="#Activites*" class="lien-element"> Activités </a>
+                </li>   
+        
+            </ul>
+             
         </nav>
            
         
-        </header>
-        <main>
-            <div class="try hebergements">
-                <section class="research">
-                    <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p class="section-subtitle">En plein centre-ville ou en pleine nature</p>
+    </header>
+<main>
+        <section class="try-hebergement">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="section-subtitle">En plein centre-ville ou en pleine nature</p>
+
+
+            <form action="" method="get">
+                <i class="fa-solid fa-location-dot" id="icone-location"></i>
+                <input type="text" id="search" name="search-text" placeholder="Marseille,France">
+                <input type="submit" id="search-submit" value="Rechercher" >
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> version mobile -->
+                    
+            </form>
+
+            <ul class="filtres-container">
+
+                <li id="filtres"> Filtres  </li>     
+                
+                <li>
+                    <i class="fa-solid fa-money-bill-wave" ><span class="filtres-title"> Économique </span></i>    
+                </li>
+                    
+                <li>
+                    <i class="fa-solid fa-person"><span class="filtres-title"> Familial </span></i>  
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-heart"><span class="filtres-title"> Romantique </span></i>  
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-fire"><span class="filtres-title"> Nos pépites </span></i>   
+                </li>
+            </ul>
+
+            <div class="info-filtres">
+        
+                <i class="fa-solid fa-circle-info"> </i>
+                <p class="section-subtitle"> Plus de 500 logements sont disponibles dans cette ville </p>
+            </div>
+
                 </section>
 
-            </div>
+           
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
