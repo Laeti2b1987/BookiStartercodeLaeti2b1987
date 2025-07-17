@@ -298,9 +298,10 @@ input::placeholder {
     font-size: 18px;
     color: black;
     width: 54px;
-    height: 21px;
+    height: 30px;
     padding-left:0px;
     border:none;
+    
     
 }
 
@@ -327,7 +328,6 @@ input::placeholder {
     padding-right: 19px;
     padding-left: 19px;
     border-radius: 25px;
-    gap: 10px;
     display:flex;
     justify-content: center;
     align-items: center;
