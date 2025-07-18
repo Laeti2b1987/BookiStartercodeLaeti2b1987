@@ -217,7 +217,7 @@ nav{
     height: 2px;
     background-color: #0065FC;
     position: absolute;
-    bottom: 30px;
+    bottom: 33px;
     left: 0;
 }
 
@@ -235,10 +235,10 @@ h1{
 form{
     display:grid;
     grid-template-columns:50px 147px 132px; 
-    width: 377px;
-    height: 49px;
+     height: 45px;
+   
 }
-form,.filtres-container,.info-filtres {
+form,.filtres-container{
     margin-top: 30px;
     margin-bottom:30px;
 }
@@ -248,7 +248,6 @@ form,.filtres-container,.info-filtres {
     align-items: center;
     justify-content: center;
     color: black;  
-    height: 49px;
     background-color: #F2F2F2;
     border: solid #F2F2F2 ;
     border-radius:15px 0px 0px 15px;
@@ -289,47 +288,69 @@ input::placeholder {
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
-    padding:0px 0px 0px 0px;
-    gap: 30px; 
+    align-items: center;
+    padding-left: 0px;
+    gap: 20px; 
+}
+
+.filtres-title {
+    
+    font-weight: 700;
+    font-size: 18px;
+    color: black; 
+    padding-left: 10px;
+  
+  
 }
 
 #filtres{
     font-weight: 700;
     font-size: 18px;
     color: black;
-    width: 54px;
-    height: 30px;
     padding-left:0px;
-    border:none;
-    
-    
-}
-
-.filtres-title {
-    font-weight: 700;
-    font-size: 18px;
-    color: black;
+    padding-top: 10px;
+    padding-bottom:10px;
     
 }
 
+li i { 
+    border:solid #D9D9D9 2px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-right: 19px;
+    padding-left: 19px;
+    border-radius: 25px;
+  
+}
+
+.fa-money-bill-wave,.fa-person,.fa-heart,.fa-fire{
+    font-size: 22px;
+    
+
+}
+
+li i:hover {
+    background-color: #DEEBFF
+   
+}
+
+    
 .info-filtres {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     padding:0px 0px 0px 0px;
     gap: 10px; 
 }
 
-.filtres-container li {
-    width: auto;
-    height: 30px;
-    border:solid #D9D9D9 2px;
-    padding-top: 4px;
-    padding-bottom:4px;
-    padding-right: 19px;
-    padding-left: 19px;
-    border-radius: 25px;
+.fa-info {
     display:flex;
     justify-content: center;
     align-items: center;
-}
+    border: solid #F2F2F2 1px;
+    border-radius: 50%;     
+    width: 20px;
+    height: 20px;
+    font-size:10px;
     
+}
