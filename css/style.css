@@ -173,6 +173,54 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activités à Marseille ***********/
+
+.activites {
+    width: 100%;
+    
+}
+
+ 
+.activites-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.activites-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left:30px;
+    padding-right: 30px; 
+    
+  
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0px;
+   
+}
+
+.activites-cards img {
+    width: 100%;
+    height:380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+
+}
+
+.activites-cards .card-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
 
 
 
@@ -400,5 +448,21 @@ li i:hover {
     width: 20px;
     height: 20px;
     font-size:10px;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+    padding: 30px;
+    margin-top:50px;
+    
+}
+     
+
+.footer-content ul{
+    list-style-type: none;
+    padding-left:0px;
     
 }
