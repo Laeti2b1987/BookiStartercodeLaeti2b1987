@@ -26,10 +26,10 @@
 
                 <ul class="lien">
                     <li>
-                        <a href="#Hebergements*" class="lien-element"> Hébergements </a>
+                        <a href="#Hebergements" class="lien-element"> Hébergements </a>
                     </li>
                     <li>
-                        <a href="#Activites*" class="lien-element"> Activités </a>
+                        <a href="#Activites" class="lien-element"> Activités </a>
                     </li>
 
                 </ul>
@@ -47,8 +47,9 @@
                 <form action="" method="get">
                     <i class="fa-solid fa-location-dot" id="icone-location"></i>
                     <input type="text" id="search" name="search-text" placeholder="Marseille,France">
-                    <input type="submit" id="search-submit" value="Rechercher">
-                    <!-- <i class="fa-solid fa-magnifying-glass"></i> version mobile -->
+                    <button type="submit" id="search-submit"> <span class="Rechercher">Rechercher</span>
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                    </button>
 
                 </form>
 
@@ -84,7 +85,7 @@
 
             <div class="hebergements-and-populaires">
 
-                <section class="hebergements">
+                <section class="hebergements" id="Hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -213,7 +214,9 @@
                                 </div>
                             </article>
                         </a>
-                        <p>Afficher plus</p>
+                        <p id="Afficher-plus">
+                            <a href="#"> Afficher Plus</a>
+                        </p>
                     </div>
                 </section>
 
@@ -287,7 +290,7 @@
                 </section>
             </div>
 
-            <section class="activites">
+            <section class="activites" id="Activites">
                 <div class="activites-title">
                     <h2 class="section-title">Activités à Marseille</h2>
                 </div>
