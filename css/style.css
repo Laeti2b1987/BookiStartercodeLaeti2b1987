@@ -128,6 +128,10 @@ a {
     margin-bottom: 5px;
 }
 
+#Afficher-plus {
+    font-weight: 700;
+    font-size: 18px;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -264,6 +268,15 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+   header{
+    width: 100%;
+   }
+    .Rechercher {
+        display: none;
+    }
+    .fa-magnifying-glass {
+        display: flex !important;
+    }
 }
 
 
@@ -330,14 +343,17 @@ h1{
 
 form{
     display:grid;
-    grid-template-columns:50px 147px 132px; 
-     height: 45px;
+    grid-template-columns:50px 147px 132px 49px; 
+    height: 45px;
    
 }
+
+
 form,.filtres-container{
     margin-top: 30px;
     margin-bottom:30px;
 }
+
 
 #icone-location {
     display:flex;
@@ -378,6 +394,18 @@ input::placeholder {
     border: none;
    
 }
+.fa-magnifying-glass{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+    border-radius:0px 15px 15px 0px;
+    border: none;
+    display: none;
+}
+
 
 
 .filtres-container {
@@ -453,16 +481,30 @@ li i:hover {
 
 footer{
     display: flex;
-    justify-content: space-between;
     background-color: var(--main-bg-color);
-    padding: 30px;
-    margin-top:50px;
+    margin: 30px 10px 0px 10px;
+   
     
 }
-     
+
+.footer-content{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 30px;
+    margin-right: 200px;
+    
+}
 
 .footer-content ul{
-    list-style-type: none;
-    padding-left:0px;
-    
+ padding:0px;
+ list-style: none;
+ 
+} 
+
+.footer-content a {
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
+
