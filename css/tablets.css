@@ -1,83 +1,88 @@
  /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+ @media (max-width: 1024px) {
 
-    .main-container {
-        width: 100%;
-    }
-*{
-    outline: 1px solid magenta;
+     .main-container {
+         width: 100%;
+     }
+
+     /****** Search Hebergements ***********/
+
+     .filtres-container {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .filtres-liste {
+         padding: 0px;
+     }
+
+     .filtres-title {
+         font-size: 15px;
+     }
+
+
+     /****** Hebergements And Populaires ***********/
+
+     .hebergements-and-populaires {
+         flex-direction: column;
+     }
+
+     .hebergements-and-populaires section {
+
+         width: 100%;
+     }
+
+     /****** Hebergements ***********/
+
+     .hebergements {
+         width: 100%;
+     }
+
+     /****** Populaires ***********/
+
+     .populaires {
+         width: 100%;
+         margin-top: 50px;
+     }
+
+     .populaires-cards {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+     }
+
+     .populaires-cards a {
+         width: 30%;
+     }
+
+     .populaires-cards .card-title {
+         font-size: 14px;
+     }
+
+     .populaires-cards .card-subtitle {
+         font-size: 13px;
+     }
+
+     /****** Activités à Marseille ***********/
+
+     .activites-cards img {
+         height: 250px;
+         width: 100%;
+     }
+
+     .card-content {
+         height: 70px;
+     }
+
+     /* Footer*/
+
+     footer {
+         width: 100%;
+     }
+
+
+     .footer-content {
+         width: 100%;
+
+     }
  }
-    
-    #filtres {
-        margin-right: 100%;
-    }
-
-    .filtres-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-
-    }
-
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-
-    .hebergements-and-populaires section {
-
-        width: 100%;
-
-
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-
-    .activites-cards img {
-        height: 250px;
-        width: 100%;
-    }
-
-    .card-content {
-        height: 70px;
-    }
-
-    /* Footer*/
-
-    footer {
-        width: 100%;
-    }
-
-
-    .footer-content {
-        width: 100%;
-
-
-
-    }
-}
