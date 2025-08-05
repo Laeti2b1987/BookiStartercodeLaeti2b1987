@@ -47,36 +47,29 @@
                 <p class="section-subtitle">En plein centre-ville ou en pleine nature</p>
 
 
-                <form action="" method="get">
+                 <form action="search" method="get" class="search-container">
                     <i class="fa-solid fa-location-dot" id="icone-location"></i>
                     <input type="text" id="search" name="search-text" placeholder="Marseille,France">
                     <button type="submit" id="search-submit"> <span class="Rechercher">Rechercher</span>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
 
+                    
+
                 </form>
 
 
-                <ul class="filtres-container">
+                
+                <div class="filtres-container">
+                <p id="filtres">Filtres</p>
+                <ul class="filtres-liste">
+                <li><i class="fa-solid fa-money-bill-wave"></i><span class="filtres-title"> Économique </span></li>
+                <li><i class="fa-solid fa-person"></i><span class="filtres-title"> Familial </span></li>
+                <li><i class="fa-solid fa-heart"></i><span class="filtres-title"> Romantique </span></li>
+        <li><i class="fa-solid fa-fire"></i><span class="filtres-title"> Nos pépites </span></li>
+    </ul>
+</div>
 
-                    <li id="filtres"> Filtres </li>
-
-                    <li>
-                        <i class="fa-solid fa-money-bill-wave"><span class="filtres-title"> Économique </span></i>
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-person"><span class="filtres-title"> Familial </span></i>
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-heart"><span class="filtres-title"> Romantique </span></i>
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-fire"><span class="filtres-title"> Nos pépites </span></i>
-                    </li>
-                </ul>
 
                 <div class="info-filtres">
 
@@ -95,7 +88,7 @@
                     <div class="hebergements-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images\hebergements\fred-kleber.jpg"
+                                <img src="./images/hebergements/fred-kleber.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -136,7 +129,7 @@
 
                         <a href="#">
                             <article class="card">
-                                <img src="./images\hebergements\reisetopia.jpg"
+                                <img src="./images/hebergements/reisetopia.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -178,7 +171,7 @@
 
                         <a href="#">
                             <article class="card">
-                                <img src="./images\hebergements\marcus-loke.jpg"
+                                <img src="./images/hebergements/marcus-loke.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -217,10 +210,14 @@
                                 </div>
                             </article>
                         </a>
-                        <p id="Afficher-plus">
-                            <a href="#"> Afficher Plus</a>
-                        </p>
+                        
+                       
+                        
                     </div>
+
+                     <a href="#">
+                            <p id="Afficher-plus"> Afficher Plus</p>
+                        </a>
                 </section>
 
                 <section class="populaires">
@@ -300,7 +297,7 @@
                 <div class="activites-cards">
                     <a href="#">
                         <article class="card">
-                            <img src="./images\activites\reno-laithienne.jpg" alt="Image du Vieux-Port">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Vieux-Port</h3>
@@ -312,7 +309,7 @@
                     </a>
                     <a href="#">
                         <article class="card">
-                            <img src="./images\activites\paul-hermann.jpg" alt="Image du Fort de Pomègues">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Fort de Pomègues</h3>
@@ -337,7 +334,7 @@
                     </a>
                     <a href="#">
                         <article class="card">
-                            <img src="./images\activites\florian-wehde.jpg" alt="Image de Note-Dame-de-la-Gare">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image de Note-Dame-de-la-Gare">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Note-Dame-de-la-Gare</h3>
