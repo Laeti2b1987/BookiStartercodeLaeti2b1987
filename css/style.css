@@ -128,39 +128,31 @@ h1 {
 }
 
 
-form {
-    display: grid;
-    grid-template-columns: 50px 147px 132px 49px;
-    height: 45px;
-}
-
-
-form,
-.filtres-container {
+.search-container {
+    display: inline-flex;
     margin-top: 30px;
     margin-bottom: 30px;
-}
 
+
+}
 
 #icone-location {
     display: flex;
     align-items: center;
     justify-content: center;
     color: black;
+    font-size: 18px;
     background-color: #F2F2F2;
-    border: solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
+    padding: 15px;
 }
 
 #search {
-    display: flex;
-    justify-content: center;
-    text-align: center;
     font-weight: 700;
-    border-right: none;
-    border-left: none;
-    border-top: solid #F2F2F2;
-    border-bottom: solid #F2F2F2
+    font-size: 18px;
+    border: 2px solid #F2F2F2;
+    padding-left: 20px;
+
 }
 
 input::placeholder {
@@ -169,20 +161,18 @@ input::placeholder {
 }
 
 #search-submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #0065FC;
     color: white;
     font-weight: 700;
+    font-size: 18px;
     border-radius: 0px 15px 15px 0px;
     border: none;
+    padding: 0 30px;
+    cursor: pointer;
 }
 
 .fa-magnifying-glass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     background-color: #0065FC;
     color: white;
     font-weight: 700;
@@ -190,6 +180,7 @@ input::placeholder {
     border: none;
     display: none;
 }
+
 
 #filtres {
     font-weight: 700;
@@ -278,20 +269,23 @@ input::placeholder {
 .hebergements {
     width: 65%;
     flex-direction: column;
-}
-
-
-.hebergements .hebergements-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 15px;
 }
 
-.hebergements .card {
-    flex-direction: column;
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 33px;
-    height: 90%;
+    box-sizing: border-box;
+
 }
 
 .hebergements a {
@@ -299,9 +293,9 @@ input::placeholder {
 }
 
 .hebergements .card-content {
+    height: 110px;
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding-left: 15px;
     box-sizing: border-box;
 }
@@ -311,6 +305,7 @@ input::placeholder {
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
 }
 
 .hebergements-cards .card-title {
@@ -323,7 +318,8 @@ input::placeholder {
 }
 
 .hebergements-cards .card-rating {
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 #Afficher-plus {
@@ -425,9 +421,15 @@ input::placeholder {
 }
 
 .activites-cards .card-title {
+    display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+    align-items: center;
+}
+
+.card-content {
+    height: 80px;
 }
 
 /****** Footer ***********/
